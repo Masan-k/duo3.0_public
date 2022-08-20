@@ -10,10 +10,11 @@ ROW_DATE=""
 ROW_ALERT=""
 
 #古いログファイルを削除
-sudo rm view*.txt
+sudo rm ../log_script/alert*.txt
+sudo rm ../log_script/create-date*.txt
 SAVE_DATE=`date +%Y%m%d`
 
-for file_path in ${CWD}/log/*.txt; do
+for file_path in ../log/*.txt; do
     # basenameコマンドでPATHを削除する。
     FILENAME="$(basename ${file_path})"
     SECTION=`echo $FILENAME | cut -d '_' -f 1`
@@ -39,12 +40,15 @@ if [ $BEFORE_SECTION = "none" ]; then
       SECTION_CNT=1
       BEFORE_SECTION=$SECTION
       WRITE_DATE=$INS_DATE
+      WRITE_ALERT=$ALERT
     
     fi
 done
 ROW_DATE+=`echo $'\n'"${BEFORE_SECTION},${SECTION_CNT},${WRITE_DATE}"`
 ROW_ALERT+=`echo $'\n'"${BEFORE_SECTION},${WRITE_ALERT}"`
 
-echo ------------$'\n'DATE LIST$'\n'------------"$ROW_DATE" > view-$SAVE_DATE.txt
-echo ------------$'\n'ALERT LIST$'\n'------------"$ROW_ALERT" >> view-$SAVE_DATE.txt
+echo ------------$'\n'CREATE_DATE LIST$'\n'------------"$ROW_DATE"
+echo ------------$'\n'ALERT LIST$'\n'------------"$ROW_ALERT"
+echo ------------$'\n'CREATE_DATE LIST$'\n'------------"$ROW_DATE" > ../log_script/create-date-$SAVE_DATE.txt
+echo ------------$'\n'ALERT LIST$'\n'------------"$ROW_ALERT" > ../log_script/alert-$SAVE_DATE.txt
 

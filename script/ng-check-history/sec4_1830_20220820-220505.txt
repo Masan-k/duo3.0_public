@@ -1,0 +1,14 @@
+
+You cannot allow to operate >> You are not allowed to operate >> OK
+the inhavitants >> the inhabitants >> OK
+One cannot too much emphasize >> One cannot emphasize too much >> OK
+potencial >> potential >> OK
+they are making too much of them. >> they are making too much of it. >> OK
+caltivating grouce >> cultivating grain >> NG:caltivating grain
+the famer >> the farmer >> NG:
+the research institution is established >> the research institute was established >> NG:the reseach institute was established
+If you consult >> Why don't you consult >> OK
+promise atorney >> prominent attorney >> OK
+in around here >> around here >> OK
+the lawer >> the lawyer >> NG:the laywer
+take regal action >> take legal action >> NG:take ligal action

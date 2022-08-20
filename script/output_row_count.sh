@@ -34,12 +34,12 @@ COUNT="none"
 ROW=""
 
 #古いログファイルを削除
-sudo rm row-count-*.txt
+sudo rm ../log_script/row-count-*.txt
 SAVE_DATE=`date +%Y%m%d`
 
 Q_NUM=99
 
-for file_path in ${CWD}/log/*.txt; do
+for file_path in ../log/*.txt; do
   # basenameコマンドでPATHを削除する。
   FILENAME="$(basename ${file_path})"
   SECTION=`echo $FILENAME | cut -d '_' -f 1`
@@ -93,5 +93,5 @@ if [ $BEFORE_SECTION = "sec10" ];then Q_NUM=$SEC10_Q_NUM;fi
 ROW+=`echo $'\n'"${BEFORE_SECTION}[${Q_NUM}]:${COUNT}"`
 
 echo "-----------"$'\n'"row_count"$'\n'"-----------$ROW"
-echo --------------------$'\n'SENTENCES COUNT LIST$'\n'--------------------"$ROW" > row-count-$SAVE_DATE.txt
+echo --------------------$'\n'SENTENCES COUNT LIST$'\n'--------------------"$ROW" > ../log_script/row-count-$SAVE_DATE.txt
 

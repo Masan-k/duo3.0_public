@@ -1,43 +1,16 @@
 <alert>15</alert>
-
-"Anything else?"
-"That's it."
-"For here or to go?"
-"To go."
-
-"How much is this rug?"
-"$100 including tax."
-"OK. I'll take it."
-
+"Anything else?""That's it.""For here or to go?""To go."
+"How much is this rug?""$100 including tax.""OK. I'll take it."
 "I don't think those pants look good to you. Try these on.They're really in now."
-
 He got out of the cab in haste, saying, "Keep the change."
-
 Delivery service is available to our customers for a sligh extra charge.
-
-"It's on me."
-"No. You treat me every time we eat out."
-"Well, okay. Let's split the check then."
-
+"It's on me.""No. You treat me every time we eat out.""Well, okay. Let's split the check then."
 <pages>3</pages>
 While he haging out in the mall. He ran into Ken.
-
 As the proble goes,"The end justifies mean."
-
-<fromJapanese>
-I was short of cash, so I withdrew $100 that I deposited my bank account las week.
-On her way home, she was rabbed of her purse.
-</fromJapanese>
-
+<fromJapanese>I was short of cash, so I withdrew $100 that I deposited my bank account las week.On her way home, she was rabbed of her purse.</fromJapanese>
 <pages>4</pages>
-"That's odd. Tell me how it happened."
-"I'll explain it to you later."
-
+"That's odd. Tell me how it happened.""I'll explain it to you later."
 My parents game me a 6 pm as a punishment because I broke my promise.
-
-<miss>
-I've no one  that I've foun that I'll have to stand on my own two feet.j
-</miss>
-<fromEnglish>
-No that I've found that there's no one to turn to, I'll have to stand on my own two feet.
-</fromEnglish>
+<miss>I've no one  that I've foun that I'll have to stand on my own two feet.j</miss>
+<fromEnglish>No that I've found that there's no one to turn to, I'll have to stand on my own two feet.</fromEnglish>

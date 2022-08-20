@@ -1,38 +1,13 @@
 <alert>6</alert>
-"Anything else?"
-"That's it."
-"For here or to go?"
-"To go."
-
-"How much is this rug?"
-"100$ including tax."
-"Ok, I'll take it."
-
-I don't think good look for you. Try these on.
-They're really in now.
-
+"Anything else?""That's it.""For here or to go?""To go."
+"How much is this rug?""100$ including tax.""Ok, I'll take it."
+I don't think good look for you. Try these on.They're really in now.
 He got out of the cab in haste, saying, "Keep the change."
-
 Delivery service is available to our customers for a slight extra charge.
-
-"It's on me."
-"No. You treat me every time we eat out."
-"Well, okay. Let's split the check."
-
+"It's on me.""No. You treat me every time we eat out.""Well, okay. Let's split the check."
 While I <missing>hanging out</missing> in the mall. He ran into Ken.
-I was short of cash so I withdrew $100 that I deposited in my bank account last week.
-On her way home, she was robbed of her purse.
-
+I was short of cash so I withdrew $100 that I deposited in my bank account last week.On her way home, she was robbed of her purse.
 As the proverb goes, "The end justifies the means."
-
-<fromJapanese>
-"That's odd! Tell me how it <missing>happened</missing><delete>is.</delete>"
-"I'll explain it <missing> to you </missing>later.
-
-Now that I've found that there's no one to turn to, I have to stand on my own two feet.
-</fromJapanese>
-<missing>
-<fromEnglish>
-My parents gave me a 6 pm curfew as a punishment because I broke my promise.
-<.fromEnglish>
-</missing>
+<fromJapanese>"That's odd! Tell me how it <missing>happened</missing><delete>is.</delete>""I'll explain it <missing> to you </missing>later.
+Now that I've found that there's no one to turn to, I have to stand on my own two feet.</fromJapanese>
+<missing><fromEnglish>My parents gave me a 6 pm curfew as a punishment because I broke my promise.<.fromEnglish></missing>

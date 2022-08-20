@@ -1,0 +1,14 @@
+
+You cannot allow to operate >> You are not allowed to operate >> NG:a
+the inhavitants >> the inhabitants >> NG:b
+One cannot too much emphasize >> One cannot emphasize too much >> NG:b
+potencial >> potential >> NG:b
+they are making too much of them. >> they are making too much of it. >> NG:d
+caltivating grouce >> cultivating grain >> NG:d
+the famer >> the farmer >> NG:d
+the research institution is established >> the research institute was established >> NG:d
+If you consult >> Why don't you consult >> NG:d
+promise atorney >> prominent attorney >> NG:d
+in around here >> around here >> NG:d
+the lawer >> the lawyer >> NG:d
+take regal action >> take legal action >> NG:d
