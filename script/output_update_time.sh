@@ -22,7 +22,6 @@ SEC8_Q_NUM=9
 SEC9_Q_NUM=13
 SEC10_Q_NUM=12
 
-CWD=$(pwd)
 BEFORE_SECTION="none"
 BEFORE_COUNT="none"
 ROW=""
@@ -30,7 +29,7 @@ BEFORE_DIFF_TIME=""
 TIME_COUNT=""
 
 #古いログファイルを削除
-sudo rm ../log_script/update-time-*.txt
+sudo rm output/update-time-*.txt
 SAVE_DATE=`date +%Y%m%d`
 
 Q_NUM=99
@@ -76,8 +75,10 @@ fi
   while read line
   do
     line_c=`echo ${line:0:1}`
-    if [ "$line_c" != "#" ] && [ "$line_c" != "<" ]; then
-      ((ROW_COUNT++))
+    if [ $line_c == '#' -o $line_c == "<" -o ${#line} == 1 ]; then
+      continue
+    else
+       ((ROW_COUNT++))
     fi
   done < ${file_path}
 
@@ -125,6 +126,6 @@ if [ $BEFORE_SECTION = "sec8" ];then Q_NUM=$SEC8_Q_NUM;fi
 if [ $BEFORE_SECTION = "sec9" ];then Q_NUM=$SEC9_Q_NUM;fi
 if [ $BEFORE_SECTION = "sec10" ];then Q_NUM=$SEC10_Q_NUM;fi
 
-ROW+=`echo $'\n'"${BEFORE_SECTION}[${Q_NUM}]:${TIME_COUNT}"`
+ROW+=`echo $'\n'"${BEFORE_SECTION}[${Q_NUM}]:${TIME_COUNT}"$'\n'"_"`
 echo "---------------------------------------------------------"$'\n'"update_time_list"$'\n'"  secXX:[question_line_count]:diff_min/input_line_count"$'\n'"---------------------------------------------------------$ROW"
-echo ----------------------------------------------------------$'\n'update_time_list$'\n'  secXX:[question_line_count]:diff_min/input_line_count$'\n'----------------------------------------------------------"$ROW" > ../log_script/update-time-$SAVE_DATE.txt
+echo ----------------------------------------------------------$'\n'update_time_list$'\n'  secXX:[question_line_count]:diff_min/input_line_count$'\n'----------------------------------------------------------"$ROW" > output/update-time-$SAVE_DATE.txt

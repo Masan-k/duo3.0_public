@@ -1,0 +1,14 @@
+OK:11 NG:1
+
+You cannot allow to operate >> You are not allowed to operate >> OK
+the inhavitants >> the inhabitants >> OK
+One cannot too much emphasize >> One cannot emphasize too much >> OK
+潜在的な >> potential >> OK
+caltivating grouce >> cultivating grain >> NG:cultivating graing
+the famer >> the farmer >> OK
+the research institution is established >> the research institute was established >> OK
+If you consult >> Why don't you consult >> OK
+promise atorney >> prominent attorney >> OK
+in around here >> around here >> OK
+the lawer >> the lawyer >> OK
+take regal action >> take legal action >> OK

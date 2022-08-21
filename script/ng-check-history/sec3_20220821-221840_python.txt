@@ -1,0 +1,21 @@
+OK:18 NG:1
+
+衝動的に（形）>> on implse >> OK
+いつでもなにか[w.. s..] >> whenever something >> OK
+私も  >> so am I >> OK
+doする余裕がある[can xxx xx do] >> can afford to do >> OK
+そんな贅沢品 >> such luxuries >> OK
+予想していた通り >>  as we anticipated >> OK
+失業率 >> unemployment rate >> OK
+4半期 >> quarters >> OK
+支出 >> expenses >> OK
+とにかく、いずれにせよ >> in any case >> OK
+妥協する >> compromise >> OK
+優秀な技師(複数) >> competent mechanics >> OK
+十分な給料 >> decent wages >> OK
+福祉改革 >> welfare reform >> OK
+悪い結果 >> dismal consequences >> NG:dismal consequence
+それは徹底的に議論が必要だ。 >> It needs a thorough review. >> OK
+非行少年が深刻な割合で増えている。 >> juvenile delinquency is on the increase at an alarming rate. >> OK
+多くの商業地区 >> in many business destricts >> OK
+..が徐々に減少している。[..is ~~] >> ..is guradually decreasing. >> OK

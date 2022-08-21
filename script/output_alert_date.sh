@@ -10,8 +10,8 @@ ROW_DATE=""
 ROW_ALERT=""
 
 #古いログファイルを削除
-sudo rm ../log_script/alert*.txt
-sudo rm ../log_script/create-date*.txt
+sudo rm output/alert*.txt
+sudo rm output/create-date*.txt
 SAVE_DATE=`date +%Y%m%d`
 
 for file_path in ../log/*.txt; do
@@ -44,11 +44,11 @@ if [ $BEFORE_SECTION = "none" ]; then
     
     fi
 done
-ROW_DATE+=`echo $'\n'"${BEFORE_SECTION},${SECTION_CNT},${WRITE_DATE}"`
-ROW_ALERT+=`echo $'\n'"${BEFORE_SECTION},${WRITE_ALERT}"`
+ROW_DATE+=`echo $'\n'"${BEFORE_SECTION},${SECTION_CNT},${WRITE_DATE}"$'\n'"_"`
+ROW_ALERT+=`echo $'\n'"${BEFORE_SECTION},${WRITE_ALERT}"$'\n'"_"`
 
-echo ------------$'\n'CREATE_DATE LIST$'\n'------------"$ROW_DATE"
-echo ------------$'\n'ALERT LIST$'\n'------------"$ROW_ALERT"
-echo ------------$'\n'CREATE_DATE LIST$'\n'------------"$ROW_DATE" > ../log_script/create-date-$SAVE_DATE.txt
-echo ------------$'\n'ALERT LIST$'\n'------------"$ROW_ALERT" > ../log_script/alert-$SAVE_DATE.txt
+echo -------------------$'\n'CREATE_DATE LIST$'\n'-------------------"$ROW_DATE"
+echo ----------------$'\n'ALERT LIST$'\n'----------------"$ROW_ALERT"
+echo -------------------$'\n'CREATE_DATE LIST$'\n'-------------------"$ROW_DATE" > output/create-date-$SAVE_DATE.txt
+echo -----------------$'\n'ALERT LIST$'\n'-----------------"$ROW_ALERT" > output/alert-$SAVE_DATE.txt
 

@@ -1,0 +1,14 @@
+OK:11 NG:1
+
+あなた操作することを許可しない >> You are not allowed to operate >> OK
+その住民 >> the inhabitants >> OK
+いくら強調してもし過ぎるということはない >> One cannot emphasize too much >> OK
+潜在的な >> potential >> OK
+穀物を栽培する >> cultivating grain >> OK
+農業経営者 >> the farmer >> OK
+その研究所は設立された >> the research institute was established >> OK
+相談したらどうですか？ >> Why don't you consult? >> NG:why don't you consult
+著名な弁護士 >> prominent attorney >> OK
+この辺り >> around here >> OK
+その弁護士 >> the lawyer >> OK
+法的手段をとる >> take legal action >> OK

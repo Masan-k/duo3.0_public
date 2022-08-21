@@ -1,0 +1,17 @@
+OK:12 NG:3
+
+Bを保証する >> conpensate for B >> NG:conpensate of b
+まったくにぞっとする >> absolutely disgusting >> OK
+薬用治療をためしたらどう。 >> try an herbal remedy. >> OK
+医学の飛躍的な発展 >> medical breakthroughs >> OK
+人類 >> humanity >> NG:humanic
+クローン技術 >> cloning techniques >> OK
+Aの届かない範囲に >> beyond the reach of A >> OK
+想像力 >> imagination >> OK
+自慢気に話す >> boast >> OK
+倫理的な理由から >> on ethical grounds >> NG:on etical grounds
+病気の初期症状 >> the initial symptoms of the disease >> OK
+代表者（複数） >> representatives >> OK
+年に一度の会議 >> from the annual conference >> OK
+嫁婿 >> son-in-law >> OK
+本物の骨董品 >> genuine antique >> OK

@@ -1,0 +1,19 @@
+OK:7 NG:10
+
+..する権利がある[be xxxx to do..] >> be entitled to do >> NG:be entitled to do..
+Bを保証する >> conpensate for B >> NG:comj
+爪 >> nails >> OK
+まったくにぞっとする >> absolutely disgusting >> NG:absolutery disgusting
+薬用治療をためしたらどう。 >> try an herbal remedy. >> NG:try an harval remedy
+医学の飛躍的な発展 >> medical breakthroughs >> NG:medical breakthorouths
+人類 >> humanity >> NG:humanic
+クローン技術 >> cloning thchniques >> NG:cloning techniqus
+Aの届かない範囲に >> beyond the reach of A >> OK
+想像力 >> imagination >> OK
+自慢気に話す >> boast >> OK
+倫理的な理由から >> on ethical grounds >> NG:on etical grounds
+病気の初期症状 >> the initial symptoms of the disease >> OK
+代表者 >> representatives >> OK
+年に一度の会議 >> from the annual conference >> OK
+嫁婿 >> son-in-law >> NG:son-law
+本物の骨董品 >> genuine antique >> NG:genelne antique

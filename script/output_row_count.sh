@@ -34,7 +34,7 @@ COUNT="none"
 ROW=""
 
 #古いログファイルを削除
-sudo rm ../log_script/row-count-*.txt
+sudo rm output/row-count-*.txt
 SAVE_DATE=`date +%Y%m%d`
 
 Q_NUM=99
@@ -48,8 +48,11 @@ for file_path in ../log/*.txt; do
   while read line
   do
     line_c=`echo ${line:0:1}`
-    if [ $line_c!='#' -a $line_c!="<" ]; then
-     ((ROW_COUNT=${ROW_COUNT}+1))
+
+    if [ $line_c == '#' -o $line_c == "<" -o ${#line} == 1 ]; then
+      continue
+    else
+      ((ROW_COUNT=${ROW_COUNT}+1))
     fi
   done < ${file_path}
 
@@ -90,8 +93,7 @@ if [ $BEFORE_SECTION = "sec8" ];then Q_NUM=$SEC8_Q_NUM;fi
 if [ $BEFORE_SECTION = "sec9" ];then Q_NUM=$SEC9_Q_NUM;fi
 if [ $BEFORE_SECTION = "sec10" ];then Q_NUM=$SEC10_Q_NUM;fi
 
-ROW+=`echo $'\n'"${BEFORE_SECTION}[${Q_NUM}]:${COUNT}"`
-
-echo "-----------"$'\n'"row_count"$'\n'"-----------$ROW"
-echo --------------------$'\n'SENTENCES COUNT LIST$'\n'--------------------"$ROW" > ../log_script/row-count-$SAVE_DATE.txt
+ROW+=`echo $'\n'"${BEFORE_SECTION}[${Q_NUM}]:${COUNT}"$'\n'"_"`
+echo "-------------------"$'\n'"SENTENCES COUNT LIST"$'\n'"-------------------$ROW"
+echo -----------------------$'\n'SENTENCES COUNT LIST$'\n'-----------------------"$ROW" > output/row-count-$SAVE_DATE.txt
 

@@ -47,7 +47,7 @@ with open('../log_ng/' + entry) as f:
     if line[:1] == '#' or line[:1] == '<':
       continue
 
-    print(line.split(">>")[0] + ">>", end = "")
+    print(line.split(">>")[0] + " >> ", end = "")
     answerWord = input().lower().strip()
     correctWord = line.split(">>")[1].lower().strip()
 
