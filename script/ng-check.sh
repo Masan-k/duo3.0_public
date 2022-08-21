@@ -55,7 +55,7 @@ done 9< $IMPORT_FILE
 echo "--------"$'\n'"CLEAR!!"$'\n'"---------"-
 echo "OK:${OK_COUNT} NG:${NG_COUNT}"
 
-SAVE_NAME_IMP=`echo ${IMPORT_FILE} | cut -d '.' -f 1` 
+SAVE_NAME_IMP=`echo ${ENTRY} | cut -d '.' -f 1` 
 SAVE_NAME_DATE=`date +%Y%m%d-%H%M%S`
 SAVE_NAME="${SAVE_NAME_IMP}_${SAVE_NAME_DATE}.txt"
 echo "$OUTPUT" > ng-check-history/${SAVE_NAME}
