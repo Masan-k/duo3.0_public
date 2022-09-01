@@ -17,17 +17,17 @@ print("-------------")
 print("NG WORD LIST")
 print("-------------")
 ngLists = os.listdir("../log_ng")
-print(ngLists)
+print(sorted(ngLists))
 entry=""
 
 while(True):
-  print("NG_LIST >> " , end="")
+  print("Please select NG_LIST >> " , end="")
   entry=input()
   for ngList in ngLists:
     if ngList == entry:
       print("import_file -> " + entry)
       break #exit(if)
-    
+ 
   else:
     print("NOT FOUND!!")
     continue
@@ -37,7 +37,6 @@ while(True):
 print("------------")
 print("Running...")
 print("------------")
-
 okCount=0
 ngCount=0
 output=""
@@ -66,6 +65,7 @@ print("CLEAR!!")
 print("----------")
 result="OK:" + str(okCount) + " NG:" + str(ngCount)
 print(result)
+print(output)
 
 saveFileName = os.path.splitext(entry)[0]
 saveDate = '{0:%Y%m%d-%H%M%S}'.format(datetime.datetime.now())
