@@ -75,7 +75,7 @@ while(True):
   parser = GingerIt()
   corrections = parser.parse(sentence)['corrections']
   for item in corrections:
-    ngText += "# row:" + str(entryCount) + " col:" + str(item['start']) + "\n"
+    ngText += "# row:" + str(entryCount) + " col:" + str(item['start']) + " definition:" + str(item['definition'])+ "\n"
     ngText += item['text'] + " >> " + item['correct'] + "\n"
     ngTextCount += 1
 

@@ -40,7 +40,6 @@ for file_path in ../log/*.txt; do
   SECTION=`echo $FILENAME | cut -d '_' -f 1`
   
   # 更新時間-作成時間
-  
   # -----------------------------------------#
   # 更新時間をファイルに入力するパターンに対応
   #   例:sec4_0820_1413-1432_13.txt
@@ -50,8 +49,12 @@ for file_path in ../log/*.txt; do
     let UP_HOUR=$((`echo $FILE_NAME_TIME | cut -d '-' -f 2 | cut -b 1-2 `))
     let UP_MIN=$((`echo $FILE_NAME_TIME | cut -d '-' -f 2 | cut -b 3-4 `))
 
-    let INS_HOUR=$((`echo $FILE_NAME_TIME | cut -b 1-2 `))
-    let INS_MIN=$((`echo $FILE_NAME_TIME | cut -b 3-4 `))
+    #let INS_HOUR=$((`echo $FILE_NAME_TIME | cut -b 1-2 `))
+    INS_HOUR=`echo $FILE_NAME_TIME | cut -b 1-2`
+    INS_MIN=`echo $FILE_NAME_TIME | cut -b 3-4`
+
+    let INS_HOUR=`expr $INS_HOUR + 0`
+    let INS_MIN=`expr $INS_MIN + 0`
 
   else
     let UP_HOUR=$((`date +%H -r $file_path`))
@@ -59,13 +62,12 @@ for file_path in ../log/*.txt; do
 
     let INS_HOUR=$((`echo $FILE_NAME_TIME | cut -d '_' -f 1 | cut -b 1-2 `))
     let INS_MIN=$((`echo $FILE_NAME_TIME | cut -d '_' -f 1 | cut -b 3-4 `))
-fi
+  fi
 
   UP_TIME=$(($UP_HOUR * 60 + $UP_MIN))
   INS_TIME=$(($INS_HOUR * 60 + $INS_MIN))
 
-
-    DIFF_TIME=$(($UP_TIME-$INS_TIME))
+  DIFF_TIME=$(($UP_TIME-$INS_TIME))
   # DIFF_TIME = [UP_TIME:1:00] -[INS_TIME:23:00] = -22
   if [ $DIFF_TIME -lt 0 ]; then
     DIFF_TIME=$(($DIFF_TIME + (24 * 60)))
@@ -86,13 +88,20 @@ fi
     BEFORE_SECTION=$SECTION
     BEFORE_COUNT=$ROW_COUNT
     BEFORE_DIFF_TIME=$DIFF_TIME
-    TIME_COUNT=$(($DIFF_TIME/$ROW_COUNT))"("$DIFF_TIME/$ROW_COUNT")"
+    if [ $ROW_COUNT == 0 ]; then
+      TIME_COUNT="0($DIFF_TIME/0)"
+    else
+      TIME_COUNT=$(($DIFF_TIME/$ROW_COUNT))"("$DIFF_TIME/$ROW_COUNT")"
+    fi
 
     elif [ $BEFORE_SECTION = $SECTION ]; then
       BEFORE_COUNT+=,$ROW_COUNT
       BEFORE_DIFF_TIME+=,$DIFF_TIME
-      TIME_COUNT+=,$(($DIFF_TIME/$ROW_COUNT))"("$DIFF_TIME/$ROW_COUNT")"
-
+      if [ $ROW_COUNT == 0 ]; then
+        TIME_COUNT="0($DIFF_TIME/0)"
+      else
+        TIME_COUNT+=,$(($DIFF_TIME/$ROW_COUNT))"("$DIFF_TIME/$ROW_COUNT")"
+      fi
     
     else
       if [ $BEFORE_SECTION = "sec1" ];then Q_NUM=$SEC1_Q_NUM;fi
